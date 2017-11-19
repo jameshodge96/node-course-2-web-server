@@ -48,6 +48,19 @@ app.get('/', (req,res) => {
   });
 });
 
+app.get('/projects', (req,res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects',
+    hyperlink: 'https://github.com/jameshodge96'
+  });
+});
+
+// /projects as a view file. render the header and footer. Render a message
+//paritals - link for pojects you can go to home / about / projects
+//commit and push to github
+// push it to heroku to use push heroku
+// check to see if it works.
+
 app.get('/about', (req,res) => {
   res.render('about.hbs', {
     pageTitle: 'About Page',
